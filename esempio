@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="it"> 
+   <head>
+        <title>1 pagina web</title>
+        <meta charset="UTF-8">
+       <!--tipologia di simboli alfanumerici-->
+        <meta name="description" content="descrizione della pagina"
+        <meta name="robot" content="index,follow">
+        
+    </head>
+    <body>
+        <h1>viaggi spasiali</h1>
+
+    </body>
+</html>
