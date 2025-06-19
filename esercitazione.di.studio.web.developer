@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="esercitazione di studio web developer">
+    <title>esercitazione di studio web developer</title>
+</head>
+<body>
+    <header>
+          <h1>Benvenuti nell'esercitazione di studio web developer</h1>
+    </header>
+    <hr>
+    <main>
+        <div>
+            <p>
+                Dopo avere accerchiato e distrutto un'intera armata austriaca durante la <a href="https://it.wikipedia.org/wiki/Campagna_di_Ulma">Campagna di Ulma</a>,<br> le forze francesi occuparono <a href="https://en.wikipedia.org/wiki/Vienna">Vienna</a> l'11 novembre 1805.<br>  
+            </p>
+            <p>
+                Gli austriaci riuscirono a evitare ulteriori combattimenti fino all'arrivo dei rinforzi russi.<br>
+            </p>
+            <p>
+                Napoleone necessitava di una vittoria decisiva e,<br> per attirare gli avversari sul terreno di battaglia da lui scelto nei pressi di Austerlitz,<br> finse di trovarsi in difficoltà facendo ripiegare le sue avanguardie e indebolendo deliberatamente il suo fianco destro.<br> 
+            </p>
+            <p>
+                I generali austro-russi concentrarono la maggior parte delle forze contro la destra francese,<br> sguarnendo pericolosamente il centro del loro fronte,<br> che subì il violento attacco di sorpresa del IV Corpo del <a href="https://fr.wikipedia.org/wiki/Jean-de-Dieu_Soult">Maresciallo Nicolas Jean-de-Dieu Soult</a>.<br> 
+            </p>
+            <p>
+                Dopo il crollo del centro nemico,<br> i francesi poterono sbaragliare entrambi i fianchi dello schieramento nemico e costrinsero gli alleati ad una fuga disordinata,<br> catturando migliaia di prigionieri.<br>
+            </p>
+        </div>
+    </main>
+    <hr>
+    <footer>
+        <h4>&copy; 2025 -Corso Web Developer</h4>
+        <p>Autore: Mihael Komljenovic</p>
+    </footer>
+</body>
+</html>
