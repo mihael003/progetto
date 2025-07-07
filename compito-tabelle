@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<html lang="it">
+<head>  
+    <meta charset="utf-8">
+    <title>compito-tabelle</title>
+    <link  rel="stylesheet" href="Style.css" type="text/css" >
+    <style>
+        body {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 20px;
+    
+    }
+
+    h1 {
+    text-align: center;
+    color: #0fdd54;
+    }
+
+    table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    }
+
+    th, td {
+    border: 3px solid #a7afb6;
+    padding: 10px;
+    text-align: center;
+    }
+
+    th {
+    background-color: #bd8e00;
+    }
+
+    .jazz {
+    background-color: #ffe594;
+    }
+    </style>
+</head>
+<body>
+    <h1>compito-tabelle</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ALBERGO</th>
+                <th>REGIONE</th>
+                <th>STELLE</th>
+                <th>COSTO CAMERA</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="jazz">
+                <td>Aristeo</td>
+                <td>Emilia Romagna</td>
+                <td>1</td>
+                <td>76,00€</td>
+            </tr>
+            <tr>
+                <td>L'essenza</td>
+                <td>Lombardia</td>
+                <td>2</td>
+                <td>87,00€</td>
+            </tr>
+            <tr class="jazz">
+                <td>Sara</td>
+                <td>Lombardia</td>
+                <td>4</td>
+                <td>142,00€</td>
+            </tr>
+            <tr>
+                <td>Grand hotel</td>
+                <td>Emilia Romagna</td>
+                <td>5</td>
+                <td>280,00€</td>
+            </tr>
+            <tr class="jazz">
+                <td>Capriccio</td>
+                <td>Calabria</td>
+                <td>4</td>
+                <td>155,00€</td>
+            </tr>
+            <tr>
+                <td>Ambasador</td>
+                <td>Calabria</td>
+                <td>2</td>
+                <td>84,00€</td>
+            </tr>
+            <tr class="jazz">
+                <td>Aster</td>
+                <td>Emilia Romagna</td>
+                <td>3</td>
+                <td>134,00€</td>  
+            </tr>
+            <tr>
+                <td>Jazz</td>
+                <td>Sardegna</td>
+                <td>3</td>
+                <td>134,00€</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
