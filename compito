@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>promo schizzo della pagina web</title>
+    <style>
+        header {
+            background-color: rgba(50, 70, 134, 0.622);
+            padding: 1%;
+            border-radius: 10px;
+            text-align: center;
+            width: 100%;
+        }
+
+       ul>li {
+            list-style-type: none;
+            display: inline;
+            margin-right: 10px;
+            background-color: rgb(45, 38, 38);
+            border-radius: 5px;
+            padding: 3px;
+       }
+
+         ul>li>a {
+                text-decoration: none;
+                color: rgb(89, 164, 79);
+                font-family: Arial;
+         }
+
+       nav {
+            background-color: rgba(0, 174, 255, 0.425);
+            padding: 1%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            width: 100%;
+
+       }
+
+       main {
+            background-color: rgba(0, 174, 255, 0.425);
+            padding: 1%;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            width: 100%;
+       }
+
+       .sezione-1 {
+            background-color: rgba(255, 6, 255, 0.425);
+            padding: 1%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+       }
+         .sezione-2 {
+                background-color: rgba(255, 0, 0, 0.425);
+                padding: 1%;
+                border-radius: 10px;
+                margin-bottom: 10px;
+         }
+         .sezione-3 {
+                background-color: rgba(255, 6, 197, 0.425);
+                padding: 1%;
+                border-radius: 10px;
+                margin-bottom: 10px;
+            }
+
+        article {
+            background-color: rgb(194, 34, 34);
+            padding: 1%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+       }
+
+         .articolo-1 {
+                background-color: rgb(193, 196, 33);
+                padding: 1%;
+                border-radius: 10px;
+                margin-bottom: 10px;
+                float: left;
+                width: 50%;
+                font-family: Arial;
+
+         }
+
+         .articolo-2 {
+                background-color: rgb(168, 214, 39);
+                padding: 1%;
+                border-radius: 10px;
+                margin-bottom: 10px;
+                font-family: Arial;
+         }
+
+         h2 {
+            color: rgb(0, 0, 0);
+            font-family: Arial;
+            text-align: center;
+         }
+
+
+
+       footer {
+            background-color: rgba(50, 70, 134, 0.622);
+            padding: 1%;
+            border-radius: 10px;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+       }
+
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Impaginazione</h1>
+    </header>
+
+    <nav>
+        <ul>
+        <li><a href="-">Link</a></li>
+        <li><a href="-">Home</a></li>
+        <li><a href="-">Contatti</a></li>
+        </ul>
+    </nav>
+
+    
+
+    <main>
+        <section class="sezione-1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, debitis quo magnam quaerat facilis ratione, perspiciatis inventore accusamus maxime quis praesentium! Commodi odit, itaque perferendis animi modi excepturi atque ut!</p>
+        </section>
+
+        <section class="sezione-2">
+
+            <article class="articolo-1">
+                <h2>Jovanotti ricorda la madre Viola: "Oggi avresti compiuto 90 anni, ma so con chi sei e che sei contenta"</h2>
+                <p>Nel giorno in cui sua madre Viola avrebbe compiuto 90 anni, Jovanotti la ricorda con due foto in bianco e nero insieme alla figlia Teresa.</p>
+            </article>
+
+            <article class="articolo-2">
+                <h2>Gli auguri di Lorenzo Jovanotti per la madre Viola</h2>
+
+                <p>Oggi, 21 luglio, la madre di Jovanotti, Viola, avrebbe compiuto 90 anni. Per celebrare la ricorrenza speciale, il cantante ha deciso di condividere con i suoi fan due fotografie in bianco e nero, che ritraggono la figlia Teresa insieme alla nonna. "Uno di quei giorni che andavamo a trovarla e lei le insegnava qualcosa, le raccontava qualche storia dei tempi andati o dei suoi figli da bambini che ne combinavano di tutti i colori, e la Teresa amava molto starla ad ascoltare" si legge a corredo delle immagini. E ancora: "La mia mamma amava le storie, era una lettrice di romanzi di qualità, amava il grande cinema ('Via col vento' il suo preferito) e a sua volta era una buona narratrice di aneddoti e di cose divertenti". Nel messaggio di saluto, Jovanotti conclude con un pensiero rivolto anche a chi non c'è più, riferendosi forse al fratello Umberto e al padre Mario:
+                    "So con chi sei, e so che sei contenta". Il post è stato ricondiviso anche da Teresa, che nelle sue storie Instagram ha scritto semplicemente: "Auguri nonna".</p>
+            </article>
+
+        </section>
+
+        <section class="sezione-3">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis aperiam ab deserunt quidem explicabo dolor molestiae porro ad magni, minima cum repudiandae nobis autem eaque quibusdam voluptas iure. Veniam, est.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        &copy mihael
+    </footer>
+
+</body>
+
+</html>
