@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Contenitori nel Grande Contenitore</title>
+    <style>
+
+         *{ box-sizing: border-box;}
+
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: auto;
+        }
+
+        .grande-contenitore-1 {
+            width: 600px;
+            height: 400px;
+            display: flex, list-item;
+            background: #51b32d;
+            overflow: auto;
+        }
+
+        .grande-contenitore-2 {
+            width: 600px;
+            height: 400px;
+            display: flex, list-item;
+            background: #2b37bd;
+            overflow: auto; 
+        }
+
+        .contenitore-1 {
+            width: 100%;
+            height: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: sans-serif;
+        }
+
+        .contenitore-2 {
+            width: 100%;
+            height: 55%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: sans-serif;
+        }
+
+        .contenitore-3 {
+            width: 100%;
+            height: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: sans-serif;
+           
+        }
+
+        .contenitore-4 {
+            width: 100%;
+            height: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: sans-serif;
+        }
+
+        .contenitore-1 img,
+        .contenitore-2 img,
+        .contenitore-3 img,
+        .contenitore-4 img {
+            width: 100%;
+            height: 100%;
+            display: flex;
+        }
+
+        .button {
+            border: none;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="grande-contenitore-1">
+        <div class="contenitore-1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzP46jSn2jDUdhkw6dxhKw-6CLDeAyqgTAsg&s" alt="apple1.jpeg">
+            <button class="button">Invia</button>
+        </div>
+        <div class="contenitore-2">
+            <img src="data:image/jpeg;base64,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" alt="apple2.jpeg">
+            <button class="button">Invia</button>
+        </div>
+    </div>
+    <div class="grande-contenitore-2">
+        <div class="contenitore-3">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFg5lR_oTiO_ZR8cntxL7jD7Y7hrQVkB58EA&s" alt="apple3.jpeg">
+            <button class="button">Invia</button>
+        </div>
+        <div class="contenitore-4">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYuSjqqpTRl9sub_jgkKCZulBks45SpSpzwQ&s" alt="apple4.jpeg">
+            <button class="button">Invia</button>
+        </div>
+    </div>
+</body>
+</html>
