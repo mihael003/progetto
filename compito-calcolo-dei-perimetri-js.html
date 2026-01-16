@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>compito calcolo dei perimetri e l'area</title>
+</head>
+<body>
+    <script>
+
+        var lato = Number(prompt("inserisci il lato del quadrato",""));
+
+
+        function perimetro(){
+
+            var calcolo_perimetro = lato * 4;
+            return calcolo_perimetro;
+
+        }
+        function area(){
+
+            var calcolo_area = lato * lato;
+            return calcolo_area;
+
+        }
+
+        document.write("il perimetro del quadrato è:" + perimetro() + " cm" + "<br>");
+        document.write("l'area del quadrato è:" + area() + " cm²");
+        document.write("<br>");
+        document.write("<hr>"); 
+
+    </script>
+
+    <script>
+
+        var base_triangolo = Number(prompt("inserisci la base del triangolo",""));
+        var altezza_triangolo = Number(prompt("inserisci l'altezza del triangolo",""));
+
+        function calcolo_area(){
+
+            var calcolo_area_triangolo = (base_triangolo * altezza_triangolo) / 2;
+            return calcolo_area_triangolo;
+
+        }
+
+        function calcolo_perimetro_triangolo(){
+
+            var calcolo_perimetro_triangolo = base_triangolo * 3;
+            return calcolo_perimetro_triangolo;
+
+        }
+
+        document.write("l'area del triangolo e:" + calcolo_area() + " cm²" + "<br>");
+        document.write("il perimetro del triangolo e:" + calcolo_perimetro_triangolo() + " cm");
+        document.write("<br>");
+        document.write("<hr>");
+
+    </script>
+
+    <script>
+
+    //    var area_cerchio = Number(prompt("inserisci l'area del cerchio",""));
+    //    var perimetro_cerchio = Number(prompt("inserisci il perimetro del cerchio",""));
+    //    var raggio = perimetro_cerchio / (2 * Math.PI);
+
+        // Math.PI è una doppia costante finale statica in Java, equivalente a π Matematico.
+        // non riuscendo a trovare come si fa il p greco in js ho usato questa costante trovata su internet
+
+    //    function calcolo_area_cerchio(){
+
+    //        var calcolo_area_cerchio = Math.PI * raggio * raggio;
+    //        return calcolo_area_cerchio;
+
+    //    }
+    //    function calcolo_perimetro_cerchio(){
+
+    //        var calcolo_perimetro_cerchio = 2 * Math.PI * raggio;
+    //        return calcolo_perimetro_cerchio;
+
+    //    }
+
+    //    document.write("il raggio del cerchio è:" + raggio + " cm" + "<br>");
+    //    document.write("l'area del cerchio è:" + calcolo_area_cerchio() + " cm²");
+    //    document.write("<br>" + "il perimetro del cerchio è:" + calcolo_perimetro_cerchio() + " cm");
+    </script>
+
+    <script>
+        // questo lo provato a fare da solo prendendo spunto da internet
+
+        var raggio = Number(prompt("inserisci il raggio del cerchio",""));
+
+        function calcolo_area_cerchio(){
+
+            var calcolo_area_cerchio = Math.PI * raggio * raggio;
+            return calcolo_area_cerchio;
+
+        }
+
+        function calcolo_perimetro_cerchio(){
+
+            var calcolo_perimetro_cerchio = 2 * Math.PI * raggio;
+            return calcolo_perimetro_cerchio;
+
+        }
+
+        document.write("l'area del cerchio è:" + calcolo_area_cerchio() + " cm²" + "<br>");
+        document.write("il perimetro del cerchio è:" + calcolo_perimetro_cerchio() + " cm");
+        document.write("<br>");
+        document.write("<hr>");
+
+
+    </script>
+
+    <script>
+
+        var lato_rettangolo = Number(prompt("inserisci il lato del rettangolo",""));
+        var base_rettangolo = Number(prompt("inserisci la base del rettangolo",""));
+
+        function calcolo_perimetro_rettangolo(){
+
+            var calcolo_perimetro_rettangolo = (lato_rettangolo + base_rettangolo) * 2;
+            return calcolo_perimetro_rettangolo;
+
+        }
+
+        function calcolo_area_rettangolo(){
+
+            var calcolo_area_rettangolo = lato_rettangolo * base_rettangolo;
+            return calcolo_area_rettangolo;
+
+        }
+
+        document.write("il perimetro del rettangolo è:" + calcolo_perimetro_rettangolo() + " cm" + "<br>");
+        document.write("l'area del rettangolo è:" + calcolo_area_rettangolo() + " cm²");
+        document.write("<hr>");
+
+    </script>
+
+</body>
+</html>
