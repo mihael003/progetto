@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>compito perimetro e area in js</title>
+    <style>
+    
+    body {
+        margin: 0px;
+        padding: 0px;
+        background-color: rgb(114, 107, 107);
+    }
+    
+        * {font-family: sans-serif;
+    }
+
+        p {font-weight: bold;
+
+    }
+    .TESTA {
+        text-align: center;
+        border: 2px solid black;
+        margin-left: 50px;
+        margin-right: 50px;
+        background-color: rgb(112, 92, 96);
+        border-radius: 10px;
+    }
+    .B {
+        text-align: center;
+    }
+    .C {
+        text-align: center;
+        font-size: 15px;
+    }
+    .box {
+        margin-left: 25%;
+        margin-right: 25%;
+        border-radius: 10px;
+        border: 2px solid black;
+        margin-top: 10px;
+        background-color: chocolate;
+    }
+
+    </style>
+</head>
+
+<body>
+    <h1 class="TESTA">COMPITO: PERIMETRO E AREA IN JS</h1>
+
+    <div class="box">
+        <div class="B"><h2><b>perimetro e area del cerchio</b></h2></div>
+
+        <div class="C">
+            <p id="1"></p>
+            <p id="2"></p>
+            <!--<p id="3"></p>-->
+        </div>
+    </div>
+
+    <script>
+                var raggio = Number(prompt("inserisci il raggio del cerchio",""));
+
+        function calcolo_area_cerchio(){
+
+            var calcolo_area_cerchio = Math.PI * raggio * raggio;
+            return calcolo_area_cerchio;
+
+        }
+
+        function calcolo_perimetro_cerchio(){
+
+            var calcolo_perimetro_cerchio = 2 * Math.PI * raggio;
+            return calcolo_perimetro_cerchio;
+
+        }
+        document.getElementById("1").innerHTML = "L'area del cerchio è la seguente: " + calcolo_area_cerchio().toFixed(2) + " cm²";
+        document.getElementById("2").innerHTML = "Il perimetro del cerchio è il seguente: " + calcolo_perimetro_cerchio().toFixed(2) + " cm";
+        //document.getElementById("3").innerHTML = "<hr>";
+    </script>
+
+        <div class="box">
+            <div class="B"><h2><b>Calcolo perimetro e area del triangolo equilatero</b></h2></div>
+
+            <div class="C">
+                <p id="4"></p>
+                <p id="5"></p>
+                <!--<p id="6"></p>-->
+            </div> 
+        </div> 
+
+    <script>
+        var lato = Number(prompt("inserisci il lato del triangolo equilatero",""));
+
+        function calcolo_area_triangolo_equilatero(){
+
+            var calcolo_area_triangolo_equilatero = (Math.sqrt(3)/4) * lato * lato;
+            return calcolo_area_triangolo_equilatero;
+
+        }
+
+        function calcolo_perimetro_triangolo_equilatero(){
+
+            var calcolo_perimetro_triangolo_equilatero = 3 * lato;
+            return calcolo_perimetro_triangolo_equilatero;
+
+        }
+        document.getElementById("4").innerHTML = "L'area del triangolo equilatero è la seguente: " + calcolo_area_triangolo_equilatero().toFixed(2) + " cm²";
+        document.getElementById("5").innerHTML = "Il perimetro del triangolo equilatero è il seguente: " + calcolo_perimetro_triangolo_equilatero().toFixed(2) + " cm";
+        //document.getElementById("6").innerHTML = "<hr>";
+    </script>
+
+        <div class="box">
+            <div class="B"><h2><b>Calcolo perimetro e area del rettangolo</b></h2></div>
+
+            <div class="C">
+                <p id="7"></p>
+                <p id="8"></p>
+                <!--<p id="9"></p>-->
+            </div>
+        </div> 
+
+    <script>
+        var base = Number(prompt("inserisci la base del rettangolo",""));
+        var altezza = Number(prompt("inserisci l'altezza del rettangolo",""));
+
+        function calcolo_area_rettangolo(){
+
+            var calcolo_area_rettangolo = base * altezza;
+            return calcolo_area_rettangolo;
+
+        }
+
+        function calcolo_perimetro_rettangolo(){
+
+            var calcolo_perimetro_rettangolo = 2 * (base + altezza);
+            return calcolo_perimetro_rettangolo;
+
+        }
+        document.getElementById("7").innerHTML = "L'area del rettangolo è la seguente: " + calcolo_area_rettangolo().toFixed(2) + " cm²";
+        document.getElementById("8").innerHTML = "Il perimetro del rettangolo è il seguente: " + calcolo_perimetro_rettangolo().toFixed(2) + " cm";
+        //document.getElementById("9").innerHTML = "<hr>";
+    </script>
+
+    <div class="box">
+        <div class="B"><h2><b>Calcolo perimetro e area del pentagono equilatero</b></h2></div>
+
+        <div class="C">
+            <p id="10"></p>
+            <p id="11"></p>
+            <!--<p id="12"></p>-->
+        </div>
+    </div>
+
+    <script>
+        var lato = Number(prompt("inserisci il lato del pentagono equilatero",""));
+
+        function calcolo_area_pentagono_equilatero(){
+
+            var calcolo_area_pentagono_equilatero = (1/4) * Math.sqrt(5 * (5 + 2 * Math.sqrt(5))) * lato * lato;
+            return calcolo_area_pentagono_equilatero;
+
+        }
+
+        function calcolo_perimetro_pentagono_equilatero(){
+
+            var calcolo_perimetro_pentagono_equilatero = 5 * lato;
+            return calcolo_perimetro_pentagono_equilatero;
+
+        }
+        document.getElementById("10").innerHTML = "L'area del pentagono equilatero è la seguente: " + calcolo_area_pentagono_equilatero().toFixed(2) + " cm²";
+        document.getElementById("11").innerHTML = "Il perimetro del pentagono equilatero è il seguente: " + calcolo_perimetro_pentagono_equilatero().toFixed(2) + " cm";
+        //document.getElementById("12").innerHTML = "<hr>";
+    </script>
+
+</body>
+</html>
