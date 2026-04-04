@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch case </title>
+
+    <style>
+        body {
+            background-color: lightblue;
+            text-align: center;
+            padding: 0%;
+            margin: 0%;
+        }
+
+        .vacanza {
+            font-size: 20px;
+            color: black;
+        }
+
+        .posti {
+            font-size: 20px;
+            color: black;
+        }
+
+        p {
+            color: black;
+            background-color: rgb(110, 149, 193);
+            padding: auto;
+            margin-left: 350px;
+            margin-right: 350px;
+            font-size: larger;
+            text-shadow: 1px 1px black; 
+        }
+
+        .button {border: none;
+                background-color: rgb(0, 0, 245);
+                color:rgb(231, 15, 177);
+                padding: 10px;
+                margin-top: 10px;
+                border-radius: 40px;
+        }
+
+        .button:hover {background-color: rgb(0, 255, 255);
+                        color:rgb(0, 0, 255);
+        }
+
+        #risultato {font-size: larger;
+                    text-align: center;
+                    margin: auto;
+                    width: 50%;
+                    height: auto;
+                    padding: 20px;
+                    border-radius: 30px;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+    <h1>Scegli il posto dove voresti andare in vacanza</h1>
+
+    <label class="posti">Scegli tra questi posti:<b> Francia, Italia, Spagna, grecia, portogallo, Australia.</b></label><br><br>
+
+    <div>
+        <label class="vacanza">facci sapere dove ti piacerebbe andare</label><br><br>
+        <input type="text" id="luogovacanza">
+        <input type="submit" onclick="luogo()" class="button">
+    </div>
+
+        <p id="risultato"></p>
+
+    <script>
+        
+        function luogo() {
+
+            var destinazione = document.getElementById("luogovacanza").value;
+
+            switch (destinazione) {
+                //caso 1 
+                case "francia":
+                    risultato.innerHTML = "La Francia, situata nell'Europa centro-occidentale, è una nazione che fonde storia, arte, natura e gastronomia, rappresentando una delle mete turistiche più apprezzate al mondo.";
+                    break;
+
+                case "italia":
+                    risultato.innerHTML = "L'Italia, una repubblica parlamentare dell'Europa meridionale con capitale Roma, è una penisola a forma di stivale nel Mar Mediterraneo, celebre per la sua forma, il suo immenso patrimonio storico-artistico, la cucina rinomata e la varietà dei paesaggi. Il territorio è caratterizzato dalle Alpi a nord, dagli Appennini che attraversano la penisola, isole maggiori come Sicilia e Sardegna, e un clima temperato mediterraneo. ";
+                    break;
+
+                case "spagna":
+                    risultato.innerHTML = "La Spagna è un paese vario e affascinante dell'Europa sud-occidentale, caratterizzato da un clima mediterraneo e atlantico, paesaggi che spaziano da montagne innevate a deserti e spiagge. È una monarchia parlamentare, nota per la sua cultura vivace, la cucina (paella, tapas), la storia, le città artistiche come Madrid e Barcellona, e l'alto stile di vita.";
+                    break;
+
+                case "grecia":
+                    risultato.innerHTML = "La Grecia è una repubblica parlamentare dell'Europa sud-orientale, situata all'estremità meridionale della penisola balcanica. Con capitale Atene, è nota come la culla della civiltà occidentale, con un territorio prevalentemente montuoso (incluso il Monte Olimpo), coste frastagliate e oltre 2.000 isole, tra cui Creta e le Cicladi. Il clima è mediterraneo, l'economia si basa su turismo, agricoltura e trasporti marittimi. ";
+                    break;
+
+                case "portogallo":
+                    risultato.innerHTML = "Il Portogallo, situato nell'estremità sud-occidentale della Penisola Iberica, è una repubblica parlamentare nota per la sua storia marinara, il clima mediterraneo/atlantico, i siti UNESCO e la capitale Lisbona. Con oltre 10 milioni di abitanti, offre paesaggi variegati: coste sabbiose al sud (Algarve), scogliere a nord, e le isole di Madeira e Azzorre nell'Atlantico.";
+                    break;
+
+                    case "australia":
+                    risultato.innerHTML = "L'Australia è il sesto paese più esteso al mondo, situato nell'emisfero australe tra gli oceani Indiano e Pacifico. Noto per la sua biodiversità unica (canguri, koala) e paesaggi estremi, offre una fusione tra moderne metropoli costiere, come Sydney e Melbourne, e il vasto entroterra arido, noto come outback. È una monarchia parlamentare federale, parte del Commonwealth, con capitale Canberra.";
+                    break;
+
+                default:
+                    risultato.innerHTML = "non abbiamo informazioni su questo posto";
+
+            }
+        }
+    </script>
+
+</body>
+</html>
